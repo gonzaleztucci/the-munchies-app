@@ -18,6 +18,9 @@ export const AddRestaurant = () => {
                 price_range: priceRange
             });
             addRestaurant(response.data.data);
+            setName('');
+            setLocation('');
+            setPriceRange('Price Range');
     }
 
   return (
