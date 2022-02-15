@@ -10,11 +10,13 @@ const devConfig = {
 }
 
 const prodConfig = {
-  connectionString: process.env.DATABASE_URL, //heroku addons
+  connectionString: process.env.DATABASE_URL
 }
 
 const pool = new Pool(
-  process.env.NODE_ENV === 'production' ? prodConfig : devConfig
+  process.env.NODE_ENV === 'production' ? {
+    connectionString: process.env.DATABASE_URL
+  } : devConfig
   );
 
 module.exports = {

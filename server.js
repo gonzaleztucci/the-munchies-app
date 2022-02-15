@@ -45,7 +45,7 @@ const checkRestaurant = (req, res, next) => {
 // Get all restaurants
 app.get('/api/v1/restaurants', (req, res) => {
     db.query('SELECT r.id, r.name, r.location, r.price_range, COALESCE(trunc(AVG(rev.rating),2), 0) AS avg_rating, COALESCE(COUNT(rev.rating), 0) AS number_of_reviews FROM restaurants r LEFT JOIN reviews rev ON r.id = rev.restaurant_id GROUP BY r.id', (err, results) => {
-        if (err) res.status(501).send('Something broke!');
+        if (err) res.status(500).send('Something broke!');
         res.json({
             status: 'success',
             results: results.rows.length,
