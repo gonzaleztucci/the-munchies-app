@@ -4,15 +4,24 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 const { Pool } = require('pg');
+const path = require('path');
 const db = require('./db/index');
 const res = require('express/lib/response');
-const  PORT = process.env.PORT || 3005;
+const  PORT = process.env.PORT || 3009;
 
 
 const app = express();
 app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
+
+if(process.env.NODE_ENV === 'production'){
+    // server static contentent
+    app.use(express.static(path.join(__dirname, 'client/build')));
+}
+
+console.log(__dirname);
+console.log(path.join(__dirname, 'client/build'))
 
 /**
  *   MIDDLEWARE
@@ -177,7 +186,7 @@ app.get('/api/v1/restaurants/:id/reviews', checkRestaurant, (req, res) => {
     })
 });
 
-//CREATE new review
+// //CREATE new review
 app.post('/api/v1/restaurants/:id/reviews', checkRestaurant , (req, res) => {
     const {id} = req.params;
     const {name, text, rating} = req.body;
