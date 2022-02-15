@@ -7,7 +7,7 @@ const { Pool } = require('pg');
 const path = require('path');
 const db = require('./db/index');
 const res = require('express/lib/response');
-const  PORT = process.env.PORT || 3009;
+const PORT = process.env.PORT || 3009;
 
 
 const app = express();
