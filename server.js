@@ -201,6 +201,11 @@ app.post('/api/v1/restaurants/:id/reviews', checkRestaurant , (req, res) => {
     })
 })
 
+app.get('*', (req, res) => {
+    console.log(path.join(__dirname, 'client/build/index.html'));
+    res.sendFile(path.join(__dirname, 'client/build/index.html'));
+})
+
 
 app.listen(PORT, () => {
     console.log(`App running on port: ${PORT}`);
