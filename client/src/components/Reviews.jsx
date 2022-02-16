@@ -14,7 +14,7 @@ export const Reviews = ({reviews}) => {
           reviews.map(review => {
               console.log(review);
               return(
-                <div key = {selectedRestaurant.restaurant.id} className="col card text-white bg-primary mb-3" style={{maxWidth: "32%", minWidth: "250px"}}>
+                <div key = {selectedRestaurant.restaurant.id} className="col card text-white bg-primary mb-3" style={{maxWidth: "32%", minWidth: "250px", margin: "4px"}}>
                     <div className="card-header d-flex justify-content-between">
                         <span className="card-title">{review.name}</span>
                         
