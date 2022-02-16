@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes ,Route } from 'react-router-dom';
+import Header from "./components/Header";
 import { RestaurantsContextProvider } from "./context/RestaurantsContext";
 import Home from "./routes/Home";
 import RestaurantDetailPage from "./routes/RestaurantDetailPage";
@@ -11,6 +12,9 @@ const App = () => {
     return(  
     <RestaurantsContextProvider>
         <div>
+             <div>
+                 <Header/>
+             </div>
             <Router>
                 <Routes>
                     <Route exact path="/" element = {<Home/>} />

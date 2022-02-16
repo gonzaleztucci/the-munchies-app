@@ -33,8 +33,9 @@ const RestaurantDetailPage = () => {
         selectedRestaurant && (
           
           <>
-            <div style={{height: "10rem", padding: '2rem'}}>
-              <h1 className='text-center display-1'>{selectedRestaurant.restaurant.name}</h1>
+            <div>
+            {/* style={{height: "10rem", padding: '2rem'}} */}
+              <h6 className='text-center display-6'>{selectedRestaurant.restaurant.name}</h6>
                 <div className='text-center'>
                   <StarRating rating={selectedRestaurant.avg_rating} /> 
                   <span className='text-warning'> ({selectedRestaurant.avg_rating})</span>
