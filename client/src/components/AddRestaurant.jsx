@@ -32,7 +32,7 @@ export const AddRestaurant = () => {
                     <input 
                             type="text" 
                             value={name}
-                            className="form-control" 
+                            className="form-control mt-2 mb-2" 
                             onChange={e => setName(e.target.value)}
                             placeholder="Name" 
                             style={{border: "1px solid black",
@@ -45,7 +45,7 @@ export const AddRestaurant = () => {
                             type="text" 
                             value = {location}
                             onChange={e => setLocation(e.target.value)}
-                            className="form-control" 
+                            className="form-control mt-2 mb-2" 
                             placeholder="Location" 
                             style={{border: "1px solid black",
                                     height: "100%"}}    
@@ -57,7 +57,7 @@ export const AddRestaurant = () => {
                 <div className="col-sm-8">
                     <select 
                                 value = {priceRange} 
-                                className="col-sm custom-select form-control my-1 mr-sm-2"
+                                className="col-sm custom-select form-control my-1 mr-sm-2 mt-2 mb-2"
                                 onChange={e => setPriceRange(e.target.value)}
                                 style={{border: "1px solid black", 
                                         height: "100%",
