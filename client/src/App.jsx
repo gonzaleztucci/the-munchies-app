@@ -11,18 +11,18 @@ import UpdateRestaurantPage from "./routes/UpdateRestaurantPage";
 const App = () => {
     return(  
     <RestaurantsContextProvider>
-        <div>
+        <Router>
              <div>
                  <Header/>
              </div>
-            <Router>
+            <main>
                 <Routes>
                     <Route exact path="/" element = {<Home/>} />
                     <Route exact path="/restaurants/:id" element = {<RestaurantDetailPage/>} />
                     <Route exact path="/restaurants/:id/update" element = {<UpdateRestaurantPage/>} />
                 </Routes>
-            </Router>
-        </div>
+            </main>
+        </Router>
     </RestaurantsContextProvider>
 )
 }
