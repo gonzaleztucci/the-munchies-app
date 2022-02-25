@@ -32,11 +32,11 @@ npm heroku-postbuild
 
 - You can add a new restaurant to our database by filling the required info and click on the *add* button
 
-![add restaurant](./resouces/images/steps-1.png)
+![add restaurant](./Resouces/images/steps-1.png)
 
 - All restaurants will be listed at the bottom of the main page, information includes the *average rating* users have given to the restaurant.
 
-![restaurants list](./resouces/images/step-2.png)
+![restaurants list](./Resouces/images/step-2.png)
 
 - You can access the detailed restaurant information and reviews by clicking on the restaurant´s name on the list. In this page you´ll also have the option to add your review for the restaurant
 
