@@ -31,4 +31,43 @@ npm heroku-postbuild
 ## App usage
 
 - You can add a new restaurant to our database by filling the required info and click on the *add* button
-![add restaurant](./resources/images/step-1)
+
+![add restaurant](./resouces/images/steps-1.png)
+
+- All restaurants will be listed at the bottom of the main page, information includes the *average rating* users have given to the restaurant.
+
+![restaurants list](./resouces/images/step-2.png)
+
+- You can access the detailed restaurant information and reviews by clicking on the restaurant´s name on the list. In this page you´ll also have the option to add your review for the restaurant
+
+![restaurant detail page](./Resouces/images/step-4.png)
+
+- If you want to Update a restaurant´s information, click on the *update* button, which will for the update page with the selected restaurant information filled. Make changes required and click *submit*
+
+![update restaurant page](./Resouces/images/step-3.png)
+
+- If you want to delete a restaurant from the list, just click the *delete* button on the restaurant list.
+
+## License and Copyright
+
+MIT License
+
+Copyright (c) [2022] [Luis José Gonzalez]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
